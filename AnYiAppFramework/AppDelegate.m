@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HXTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    HXTabBarController *c = [[HXTabBarController alloc] init];
+    c.view.backgroundColor = [UIColor lightGrayColor];
+    self.window.rootViewController = c;
+    
     return YES;
 }
 
