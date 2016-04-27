@@ -18,7 +18,12 @@
 
 @implementation HXTabBarController
 
--(void) createAllChildViewController{
+- (void)viewDidLoad
+{
+    [self createAllChildViewController];
+}
+
+- (void)createAllChildViewController {
     // 首页
     HXHomeViewController *home = [[HXHomeViewController alloc] init];
     

@@ -18,10 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     HXTabBarController *c = [[HXTabBarController alloc] init];
     c.view.backgroundColor = [UIColor lightGrayColor];
     self.window.rootViewController = c;
+    [self.window makeKeyAndVisible];
     
     return YES;
 }
