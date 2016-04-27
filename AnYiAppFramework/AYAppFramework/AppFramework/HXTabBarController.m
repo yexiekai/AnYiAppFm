@@ -16,11 +16,16 @@
 
 #import "UIImage+Image.h"
 
+@interface HXTabBarController ()
+@property(nonatomic, strong) NSMutableArray *items;
+@end
+
 @implementation HXTabBarController
 
 - (void)viewDidLoad
 {
     [self createAllChildViewController];
+    [self createTabBar];
 }
 
 - (void)createAllChildViewController {
@@ -47,7 +52,7 @@
     vc.title = title;
     vc.tabBarItem.image = image;
     vc.tabBarItem.selectedImage = selectedImage;
-    
+    [self.items addObject:vc.tabBarItem];
 //    //未选中字体颜色
 //    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:HXFONT_COLOR_BLACK,NSFontAttributeName:[UIFont fontWithName:@"HelveticaNeue-Bold" size:10.0f]} forState:UIControlStateNormal];
 //
@@ -59,6 +64,21 @@
     HXNavigationController *nav = [[HXNavigationController alloc] initWithRootViewController:vc];
     
     [self addChildViewController:nav];
+}
+
+-(void) createTabBar{
+    //初始化自定义tabBar
+    HXTabBar *tabBar = [[HXTabBar alloc] initWithFrame:self.tabBar.bounds];
+    //设置代理
+    tabBar.delegate = self;
+    
+    tabBar.backgroundColor = [UIColor whiteColor];
+    
+    //给tabBar传递tabBarItem模型
+    tabBar.tabItems = self.items;
+    
+    //添加自定义tabBar
+    [self.tabBar addSubview:tabBar];
 }
 
 @end

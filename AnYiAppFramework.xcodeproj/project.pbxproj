@@ -20,8 +20,12 @@
 		D2011E1B1CCF72EF00BC1B14 /* HXProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2011E1A1CCF72EF00BC1B14 /* HXProductListViewController.m */; };
 		D2011E1E1CCF72FE00BC1B14 /* HXProfileHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2011E1D1CCF72FE00BC1B14 /* HXProfileHomeViewController.m */; };
 		D2011E211CCF730900BC1B14 /* HXMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2011E201CCF730900BC1B14 /* HXMoreViewController.m */; };
-		D2011E241CCF742200BC1B14 /* HXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2011E231CCF742200BC1B14 /* HXTabBarController.m */; };
-		D2011E271CCF745C00BC1B14 /* HXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2011E261CCF745C00BC1B14 /* HXNavigationController.m */; };
+		D2011E7C1CD069FD00BC1B14 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D2011E7B1CD069FD00BC1B14 /* UIView+Frame.m */; };
+		D2011E891CD0905F00BC1B14 /* HXBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2011E801CD0905F00BC1B14 /* HXBadgeView.m */; };
+		D2011E8A1CD0905F00BC1B14 /* HXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D2011E821CD0905F00BC1B14 /* HXTabBar.m */; };
+		D2011E8B1CD0905F00BC1B14 /* HXTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D2011E841CD0905F00BC1B14 /* HXTabBarButton.m */; };
+		D2011E8C1CD0905F00BC1B14 /* HXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2011E861CD0905F00BC1B14 /* HXNavigationController.m */; };
+		D2011E8D1CD0905F00BC1B14 /* HXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2011E881CD0905F00BC1B14 /* HXTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +72,18 @@
 		D2011E1D1CCF72FE00BC1B14 /* HXProfileHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXProfileHomeViewController.m; sourceTree = "<group>"; };
 		D2011E1F1CCF730900BC1B14 /* HXMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXMoreViewController.h; sourceTree = "<group>"; };
 		D2011E201CCF730900BC1B14 /* HXMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXMoreViewController.m; sourceTree = "<group>"; };
-		D2011E221CCF742200BC1B14 /* HXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXTabBarController.h; sourceTree = "<group>"; };
-		D2011E231CCF742200BC1B14 /* HXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXTabBarController.m; sourceTree = "<group>"; };
-		D2011E251CCF745C00BC1B14 /* HXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXNavigationController.h; sourceTree = "<group>"; };
-		D2011E261CCF745C00BC1B14 /* HXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXNavigationController.m; sourceTree = "<group>"; };
+		D2011E7A1CD069FD00BC1B14 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		D2011E7B1CD069FD00BC1B14 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		D2011E7F1CD0905F00BC1B14 /* HXBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXBadgeView.h; sourceTree = "<group>"; };
+		D2011E801CD0905F00BC1B14 /* HXBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXBadgeView.m; sourceTree = "<group>"; };
+		D2011E811CD0905F00BC1B14 /* HXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXTabBar.h; sourceTree = "<group>"; };
+		D2011E821CD0905F00BC1B14 /* HXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXTabBar.m; sourceTree = "<group>"; };
+		D2011E831CD0905F00BC1B14 /* HXTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXTabBarButton.h; sourceTree = "<group>"; };
+		D2011E841CD0905F00BC1B14 /* HXTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXTabBarButton.m; sourceTree = "<group>"; };
+		D2011E851CD0905F00BC1B14 /* HXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXNavigationController.h; sourceTree = "<group>"; };
+		D2011E861CD0905F00BC1B14 /* HXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXNavigationController.m; sourceTree = "<group>"; };
+		D2011E871CD0905F00BC1B14 /* HXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXTabBarController.h; sourceTree = "<group>"; };
+		D2011E881CD0905F00BC1B14 /* HXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,10 +178,7 @@
 		D2011E091CCF6DCA00BC1B14 /* AYAppFramework */ = {
 			isa = PBXGroup;
 			children = (
-				D2011E221CCF742200BC1B14 /* HXTabBarController.h */,
-				D2011E231CCF742200BC1B14 /* HXTabBarController.m */,
-				D2011E251CCF745C00BC1B14 /* HXNavigationController.h */,
-				D2011E261CCF745C00BC1B14 /* HXNavigationController.m */,
+				D2011E7D1CD0905F00BC1B14 /* AppFramework */,
 				D2011E121CCF723400BC1B14 /* Home */,
 				D2011E141CCF723400BC1B14 /* Product */,
 				D2011E151CCF723400BC1B14 /* Profile */,
@@ -191,6 +200,8 @@
 			children = (
 				D2011E0F1CCF6F0E00BC1B14 /* UIImage+Image.h */,
 				D2011E101CCF6F0E00BC1B14 /* UIImage+Image.m */,
+				D2011E7A1CD069FD00BC1B14 /* UIView+Frame.h */,
+				D2011E7B1CD069FD00BC1B14 /* UIView+Frame.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -229,6 +240,31 @@
 				D2011E1D1CCF72FE00BC1B14 /* HXProfileHomeViewController.m */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		D2011E7D1CD0905F00BC1B14 /* AppFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D2011E7E1CD0905F00BC1B14 /* FrameworkView */,
+				D2011E851CD0905F00BC1B14 /* HXNavigationController.h */,
+				D2011E861CD0905F00BC1B14 /* HXNavigationController.m */,
+				D2011E871CD0905F00BC1B14 /* HXTabBarController.h */,
+				D2011E881CD0905F00BC1B14 /* HXTabBarController.m */,
+			);
+			path = AppFramework;
+			sourceTree = "<group>";
+		};
+		D2011E7E1CD0905F00BC1B14 /* FrameworkView */ = {
+			isa = PBXGroup;
+			children = (
+				D2011E7F1CD0905F00BC1B14 /* HXBadgeView.h */,
+				D2011E801CD0905F00BC1B14 /* HXBadgeView.m */,
+				D2011E811CD0905F00BC1B14 /* HXTabBar.h */,
+				D2011E821CD0905F00BC1B14 /* HXTabBar.m */,
+				D2011E831CD0905F00BC1B14 /* HXTabBarButton.h */,
+				D2011E841CD0905F00BC1B14 /* HXTabBarButton.m */,
+			);
+			path = FrameworkView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,16 +397,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2011E8A1CD0905F00BC1B14 /* HXTabBar.m in Sources */,
 				D2011E1E1CCF72FE00BC1B14 /* HXProfileHomeViewController.m in Sources */,
 				D2011E1B1CCF72EF00BC1B14 /* HXProductListViewController.m in Sources */,
+				D2011E8B1CD0905F00BC1B14 /* HXTabBarButton.m in Sources */,
 				D2011DDE1CCF6D2B00BC1B14 /* ViewController.m in Sources */,
 				D2011E211CCF730900BC1B14 /* HXMoreViewController.m in Sources */,
+				D2011E8C1CD0905F00BC1B14 /* HXNavigationController.m in Sources */,
 				D2011E181CCF72B500BC1B14 /* HXHomeViewController.m in Sources */,
 				D2011E111CCF6F0E00BC1B14 /* UIImage+Image.m in Sources */,
 				D2011DDB1CCF6D2B00BC1B14 /* AppDelegate.m in Sources */,
-				D2011E241CCF742200BC1B14 /* HXTabBarController.m in Sources */,
+				D2011E7C1CD069FD00BC1B14 /* UIView+Frame.m in Sources */,
+				D2011E891CD0905F00BC1B14 /* HXBadgeView.m in Sources */,
 				D2011DD81CCF6D2B00BC1B14 /* main.m in Sources */,
-				D2011E271CCF745C00BC1B14 /* HXNavigationController.m in Sources */,
+				D2011E8D1CD0905F00BC1B14 /* HXTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

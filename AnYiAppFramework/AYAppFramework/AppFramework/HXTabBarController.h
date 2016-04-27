@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HXTabBar.h"
 
-@interface HXTabBarController : UITabBarController
+@interface HXTabBarController : UITabBarController <HXTabBarDelegate>
 
 @end
