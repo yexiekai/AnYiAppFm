@@ -2,8 +2,8 @@
 //  UIImage+Image.m
 //  hengxin
 //
-//  Created by 许毅 on 15/10/28.
-//  Copyright (c) 2015年 许毅. All rights reserved.
+//  Created by yxk on 15/10/28.
+//  Copyright (c) 2015年 yxk. All rights reserved.
 //
 
 #import "UIImage+Image.h"

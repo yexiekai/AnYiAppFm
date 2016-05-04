@@ -1,0 +1,175 @@
+//
+//  WeiBo.pch
+//  WeiBo
+//
+//  Created by yxk on 15/9/15.
+//  Copyright (c) 2015年 yxk. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import "UIView+Frame.h"
+#import "UIImage+Image.h"
+//#import "Masonry.h"
+//#import "EXTScope.h"
+//#import "HXUtil.h"
+
+#define PI 3.14159265358979323846
+
+//ios系统版本
+#define ios9x [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0f
+#define ios8x [[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0f
+#define ios7x ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0f) && ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0f)
+#define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad  ? YES : NO)
+#define isPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? YES : NO)
+#define isRetina ([[UIScreen mainScreen] scale] > 1 ? YES : NO)
+
+//设备屏幕尺寸
+#define iphone4x_3_5 ([UIScreen mainScreen].bounds.size.height==480.0f)
+#define iphone5x_4_0 ([UIScreen mainScreen].bounds.size.height==568.0f)
+#define iphone6_4_7 ([UIScreen mainScreen].bounds.size.height==667.0f)
+#define iphone6Plus_5_5 ([UIScreen mainScreen].bounds.size.height==736.0f || [UIScreen mainScreen].bounds.size.height==414.0f)
+
+//当前主窗口
+#define HXKEY_WINDOW       [UIApplication sharedApplication].keyWindow
+
+//当前设备的屏幕宽度
+#define HXSCREEN_WIDTH     [UIScreen mainScreen].bounds.size.width
+
+//当前设备的屏幕高度
+#define HXSCREEN_HEIGHT    [UIScreen mainScreen].bounds.size.height
+
+//加特大号字体
+#define HXFONT_SIZE_EVER_HUGE  [UIFont systemFontOfSize:22]
+
+//特大号字体
+#define HXFONT_SIZE_HUGE  [UIFont systemFontOfSize:17]
+
+//大号字体
+#define HXFONT_SIZE_LARGE  [UIFont systemFontOfSize:15]
+
+//中号字体
+#define HXFONT_SIZE_NORMAL [UIFont systemFontOfSize:13]
+
+//小号字体
+#define HXFONT_SIZE_SMALL  [UIFont systemFontOfSize:11]
+
+//全局的默认字体颜色(深灰)
+#define HXFONT_COLOR_BLACK       [UIColor colorWithRed:85/255.0 green:85/255.0 blue:85/255.0 alpha:1]
+
+//全局的灰色字体颜色(浅灰)
+#define HXFONT_COLOR_GRAY        [UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1]
+
+//高亮的字体颜色(应该是什么颜色？待定)
+#define HXFONT_COLOR_HIGH_LIGHT  [UIColor colorWithRed:85/255.0 green:85/255.0 blue:85/255.0 alpha:1]
+
+//字体颜色(橙色)
+#define HXFONT_COLOR_ORANGE      [UIColor colorWithRed:255/255.0 green:160/255.0 blue:48/255.0 alpha:1]
+
+//字体颜色(警告红色)
+#define HXFONT_COLOR_NOTICE      [UIColor colorWithRed:200/255.0 green:0/255.0 blue:0/255.0 alpha:1]
+
+//字体颜色(蓝色)
+#define HXFONT_COLOR_BLUE        [UIColor colorWithRed:61/255.0 green:146/255.0 blue:212/255.0 alpha:1]
+
+//字体颜色(绿色)
+#define HXFONT_COLOR_GREEN       [UIColor colorWithRed:124/255.0 green:200/255.0 blue:83/255.0 alpha:1]
+
+//字体颜色(红色)
+#define HXFONT_COLOR_RED         [UIColor colorWithRed:185/255.0 green:0/255.0 blue:0/255.0 alpha:1]
+
+//背景颜色(蓝色)
+#define HXBGCOLOR_BLUE           HXFONT_COLOR_BLUE
+
+//背景颜色(蓝色高亮)
+#define HXBGCOLOR_BLUE_HIGHLIGHT [UIColor colorWithRed:68/255.0 green:162/255.0 blue:236/255.0 alpha:1]
+
+//背景颜色(轻灰)
+#define HXBGCOLOR_LIGHT_GRAY     [UIColor colorWithRed:238/255.0 green:238/255.0 blue:238/255.0 alpha:1]
+
+//边框颜色(灰色)
+#define HXBDCOLOR_GRAY           [UIColor colorWithRed:222/255.0 green:222/255.0 blue:222/255.0 alpha:1]
+
+//模块水平左右两边外间距
+#define HXMARGIN_BLOCK_HORIZON   15
+
+//模块垂直上下两边外间距
+#define HXMARGIN_BLOCK_VERTICAL  10
+
+//模块内部元素大间距
+#define HXMARGIN_INLINE_LARGE    HXMARGIN_BLOCK_VERTICAL
+
+//模块内部元素小间距
+#define HXMARGIN_INLINE_SMALL    5
+
+//边框颜色(灰色)
+#define HXBORDER_COLOR_GRAY     [UIColor colorWithRed:229/255.0 green:229/255.0 blue:229/255.0 alpha:1]
+
+//边框颜色(橙色)
+#define HXBORDER_COLOR_ORANGE   [UIColor colorWithRed:255/255.0 green:102/255.0 blue:0/255.0 alpha:1]
+
+//边框颜色(红色)
+#define HXBORDER_COLOR_RED      HXFONT_COLOR_RED
+
+
+
+// __VA_ARGS__:表示函数里面的可变参数
+#ifdef DEBUG // 调试
+
+#define HXLog(...) NSLog(__VA_ARGS__)
+
+#else // 发布
+
+#define HXLog(...)
+
+#endif
+
+#endif
+
+/*网络相关参数*/
+#define HX_BASE_URL @"http://172.17.128.106:8080/ayjr/"
+//#define HX_BASE_URL @"http://172.17.11.49:8080/ayjr/"
+#define HX_HTTP_TIMEOUT 20
+
+//请将系统里面的所有相关参数改为使用以上宏变量，如有补充请在本注释文本上面一行添加，本注释后面的定义将被删除。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ *  HXTabBar相关的宏定义
+ *  BadgeViewFontSize    切换tabBar的子控件badgeView气泡的文字字号
+ *  TabBarButtonFontSize 切换tabBar的文字字号
+ *
+ *  @return <#return value description#>
+ */
+#define BadgeViewFontSize    [UIFont systemFontOfSize:11]
+#define TabBarButtonFontSize [UIFont systemFontOfSize:12]
+#define HXImageRadio          0.7
+
+
+
+
+/**
+ *  MANAGER_PRODUCT_CELL
+ */
+#define HXNameFont  [UIFont systemFontOfSize:15]
+#define HXTextFont  [UIFont systemFontOfSize:11]
+#define HXScreenWith [UIScreen mainScreen].bounds.size.width
+#define HXProductCellMargin 20
+#define HXProductDetailMargin 20
+
+// ...表示宏定义的可变参数
+
